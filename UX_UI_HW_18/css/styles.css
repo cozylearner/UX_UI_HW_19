@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff7f4;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-skills {
+  display: flex;
+  gap: 2rem;
+  margin: 0 27rem;
+}
+
+.parent-skills div {
+  min-width: 15rem;
+  width: 33.3%;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  padding: 1.5rem 1rem;
+}
+
+.parent-skills div h3 {
+  font-family: "Alkatra", cursive;
+  font-size: 1.5rem;
+}
+.parent-skills div p {
+  font-family: "Poppins", sans-serif;
+}
+
+.parent-skills div:nth-child(1) {
+  background-color: #d6f9b5;
+}
+.parent-skills div:nth-child(2) {
+  background-color: #f6d3f1;
+}
+.parent-skills div:nth-child(3) {
+  background-color: #fd8a8a;
+}
+
+.workGrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.workGrid h1 {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.row {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0 25.4rem;
+  height: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.row > .icon {
+  background-color: white;
+  padding: 2rem;
+  display: grid;
+  place-content: center;
+  border-radius: 1rem;
+  box-shadow: 4px 0px 4px 0px rgba(000, 000, 000, 0.3);
+}
+
+.row > .work-description {
+  background-color: white;
+  border-radius: 1rem;
+
+  padding: 1rem;
+  height: 100%;
+  box-shadow: 4px 0px 4px 0px rgba(000, 000, 000, 0.3);
+}
+
+.row > .work-description h3 {
+  font-family: "Alkatra", cursive;
+  font-size: 1.5rem;
+}
+.row > .work-description p {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+.row > .work-description a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+  background-color: #d6f9b5;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  border: 2px solid #d6f9b5;
+}
+
+.row > .work-description a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Here are the media queries */
+
+@media only screen and (max-width: 600px) {
+  .parent-skills {
+    flex-direction: column;
+    margin: 0 3rem;
+  }
+
+  .parent-skills div {
+    width: 100%;
+  }
+  .workGrid {
+  }
+  .row {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0 0rem;
+    height: 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .row > .icon {
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    border-radius: 1rem;
+    box-shadow: 4px 0px 4px 0px rgba(000, 000, 000, 0.3);
+  }
+
+  .row > .work-description {
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 100%;
+    box-shadow: 4px 0px 4px 0px rgba(000, 000, 000, 0.3);
+  }
+}
